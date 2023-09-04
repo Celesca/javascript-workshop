@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คำนวณเกรด | Deversetus Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">โปรแกรมคำนวณเกรด</h1>
+
+    <div class="main-container">
+
+        <form class="text-form" id="form-control">
+            
+                <div class="input-box">
+                <label for="">ชื่อรายวิชา</label>
+                <input type="text" class="text-box" id="box-1" placeholder="เช่น คณิตศาสตร์">
+                </div>
+
+                <div class="input-box">
+                <label for="">หน่วยกิต</label>
+                <input type="number" class="text-box" id="box-2" placeholder="เช่นตัวเลข 1.0-4.0">
+                </div>
+
+                <div class="input-box">
+                <label for="">เกรด</label>
+                <input type="text" class="text-box" id="box-3" placeholder="เช่น A, B, C">
+                </div>
+                <button class="btn" id="form-submit">เพิ่มรายการ</button>
+          
+        
+        </form>
+</div>
+
+    <div class="list-container">
+        <h3>รายวิชาทั้งหมด</h3>
+        <ul id="ul-list">
+            <!-- <li class="list A">คณิตศาสตร์<span class="credit">3.0 หน่วยกิต A</span>
+            <button class="delete-btn">x</button>
+            </li>
+            <li class="list B">เงิน<span class="credit">3.0 หน่วยกิต B</span>
+                <button class="delete-btn">x</button>
+                </li> -->
+
+        </ul>
+    </div>
+
+    <button class="final-btn" id="final-btn" onclick="calculategrade()">สรุปผลเกรด</button>
+    
+    <div class="result-container hide" id="result-container">
+        <h2>คุณได้เกรด</h2>
+        <h1 id="grade-result">3.98</h1>
+        <img src="" alt="" class="result-img" id="result-img">
+        <div class="text-result">
+            <p id="text-result"></p>
+        </div>
+    </div>
+
+    <div class="social-media" id="social-media">
+        <a href="https://www.facebook.com/crazyfolkza" target="_blank">
+        <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/folkkk.sawit" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+        <a href="https://www.linkedin.com" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://www.youtube.com" target="_blank">
+        <i class="fa-brands fa-youtube"></i>
+    </a>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/7f1e7e005a.js" crossorigin="anonymous"></script>
+</html>
