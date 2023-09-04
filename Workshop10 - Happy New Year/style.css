@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1482517967863-00e15c9b44be?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex; 
+    margin:0; /*ทำให้ไม่มีการ scroll */
+    color: #fff;
+    overflow: hidden;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    width:100%;
+    height:100%;
+}
+
+body * {
+    z-index:1;
+}
+
+h1 {
+    font-size: 60px;
+    margin: -80px 0 40px;
+}
+
+.countdown { /*อันนี้เซ็ตตัว วัน ชั่วโมง นาที วินาที */
+    display:flex;
+    transform: scale(2); /*ให้มันใหญ่ขึ้น 2 เท่า */
+}
+
+.time { /*อันนี้เซ็ตแค่บล็อคข้างในคือ ตัวเลข กับ อักษรด้านใน */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:15px;
+}
+
+.time h2{
+    margin: 0 0 5px;
+}
+
+@media(max-width:500px) {
+    h1 {
+        font-size: 35px;
+    }
+    .time {
+        margin: 5px;
+    }
+    .time h2 {
+        font-size:12px;
+        margin: 0;
+    }
+    .time small {
+        font-size: 10px;
+    }
+}
