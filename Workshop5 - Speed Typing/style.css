@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background-color: #2c3e50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin:0;
+}
+
+.level-btn {
+    cursor: pointer;
+    font-size:14px;
+    border-radius: 4px;
+    padding: 5px 15px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.level-btn:hover {
+    transform: scale(0.98);
+}
+
+.settings {
+    position: absolute;
+    top:0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(0);
+    transition: transition 0.3s ease-in-out; /*เมื่อมีการเลื่อน */
+}
+
+.settings.hide {
+    transform: translateY(-100%); /*ย้ายตำแหน่งไปด้านบน */
+}
+
+select {
+    width: 200px;
+    padding: 5px;
+    appearance: none; /*ไม่มีลูกศร drop down */
+    border-radius: 5px;
+}
+
+.settings label{
+    color: white;
+}
+
+.container {
+    background-color: #34495e;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+    color: #fff; /*ข้อความด้านใน container*/
+    position: relative;
+    text-align: center; /* ข้อความด้านในเป็น center */
+    width: 500px;
+}
+
+h2 {
+    background-color: rgba(0,0,0,0.3);
+    padding: 8px;
+    margin: 0 0 40px; /*ซ้ายขวาไม่มี บนล่าง 40px */
+}
+
+.word {
+    margin:0;
+    color: yellow;
+    
+}
+
+input {
+    border:0; /*ไม่มีขอบ */
+    border-radius: 2px;
+    font-size: 18px;
+    width: 300px;
+    margin: 10px 0 10px;
+    padding: 12px 20px; /*ขยายข้อความด้านใน input */
+}
+
+.time-container {
+    position: absolute;
+    top: 60px;
+    left: 25px;
+    color: greenyellow;
+}
+
+.score-container {
+    position: absolute;
+    right: 25px;
+    top: 60px;
+}
+
+.gameover-container {
+    z-index: 1; /*ให้อยู่หน้าสุด*/
+    background: inherit; /*อ้างอิงสีตามตัวแม่ (container) */
+    width: 100%; /*ขนาด 100% ตามกล่องแม่ div container */
+    height: 100%;
+    position: absolute;
+    top:0; /*ชิดขอบบน container*/
+    left:0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none; /*อย่าพึ่งแสดง รอเป็น display:flex; */
+}
