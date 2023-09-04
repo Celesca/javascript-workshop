@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Slider | Workshop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <ul>
+            <li><a href="#">หน้าแรก</a></li>
+            <li><a href="#">เกี่ยวกับ</a></li>
+            <li><a href="#">ติดต่อเรา</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <button id="toggle" class="toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <h1>Deversetus Studio</h1>
+        <p>เรียนรู้การสร้างเกมและเขียนโปรแกรม</p>
+        <button class="create-account" id="open">สร้างบัญชีผู้ใช้</button>
+    </header>
+    <div class="container">
+        <h2>Web Development</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quia corporis excepturi voluptas odit dolorum ab qui sed reprehenderit, in omnis maxime nemo ut adipisci quas perspiciatis aspernatur id dolor.</p>
+        <h2>Game Development</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae necessitatibus deserunt ipsum minima nesciunt fuga deleniti, quis sequi, veniam numquam illum doloremque ab dolorum rerum?</p>
+    </div>
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <button class="close-btn" id="close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="modal-header">
+                <h1>สร้างบัญชีผู้ใช้</h1>
+            </div>
+            <div class="modal-content">
+                <p>แบบฟอร์มสร้างบัญชี</p>
+                <form class="modal-form">
+                    <div>
+                        <label for="">ชื่อผู้ใช้</label>
+                        <input type="text" class="form-input">
+                    </div>
+                    <div>
+                        <label for="">อีเมล</label>
+                        <input type="email" class="form-input">
+                    </div>
+                    <div>
+                        <label for="">รหัสผ่าน</label>
+                        <input type="password" class="form-input">
+                    </div>
+                    <input type="submit" value="บันทึก" class="submit-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/7f1e7e005a.js" crossorigin="anonymous"></script>
+</html>
